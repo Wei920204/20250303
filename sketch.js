@@ -36,7 +36,7 @@ function setup() {
   dropdown.style('font-size', '25px'); // 設置下拉式選單文字大小
   dropdown.style('padding', '10px'); // 設置下拉式選單大小
   dropdown.option('第三周作品'); // 添加選項
-  dropdown.option('第二周'); // 添加選項
+  dropdown.option('教科'); // 添加選項
   dropdown.option('第三周講義'); // 添加選項
   dropdown.changed(handleDropdownChange); // 當選項改變時，調用 handleDropdownChange 函數
 
@@ -82,7 +82,7 @@ function handleDropdownChange() {
   let selected = dropdown.value(); // 獲取選中的選項
   if (selected === '第三周作品') {
     iframe.attribute('src', 'https://wei920204.github.io/20250303/'); // 嵌入第一周網址
-  } else if (selected === '第二周') {
+  } else if (selected === '教科') {
     iframe.attribute('src', 'https://www.et.tku.edu.tw'); // 嵌入第二周網址
   } else if (selected === '第三周講義') {
     iframe.attribute('src', 'https://hackmd.io/km0t5I6bRLexPdWSIWymOg'); // 嵌入第三周網址
